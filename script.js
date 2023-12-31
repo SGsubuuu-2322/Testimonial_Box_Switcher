@@ -60,6 +60,12 @@ function updateTestimonial() {
   user_image.src = photo;
   user_role.innerHTML = position;
   user_name.innerHTML = name;
+
+  idx++;
+
+  if (idx > testimonials.length - 1) {
+    idx = 0;
+  }
 }
 
 setInterval(updateTestimonial, 10000);
