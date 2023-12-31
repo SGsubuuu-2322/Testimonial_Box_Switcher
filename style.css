@@ -41,6 +41,44 @@ body {
   right: 40px;
 }
 
+.testimonial {
+  line-height: 28px;
+  text-align: justify;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user .user-image {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user .user-details {
+  margin-left: 10px;
+}
+
+.username {
+  margin: 0;
+}
+
+.user .role {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background-color: #fff;
+  height: 5px;
+  width: 100%;
+  animation: grow 10s linear infinite;
+}
+
 @media (max-width: 768px) {
   .fa-quote {
     display: none;
