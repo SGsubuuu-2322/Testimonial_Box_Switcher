@@ -1,6 +1,7 @@
 const testimonial_container = document.querySelector(".testimonial-container");
 const testimonial = document.querySelector(".testimonial");
 const user_image = document.querySelector(".user-image");
+const user_name = document.querySelector(".username");
 const user_role = document.querySelector(".role");
 
 const testimonials = [
@@ -49,3 +50,16 @@ const testimonials = [
     text: "This guy is a young and talented IT professional, proactive and responsible, with a strong work ethic. He is very strong in PSD2HTML conversions and HTML/CSS technology. He is a quick learner, eager to learn new technologies. He is focused and has the good dynamics to achieve due dates and outstanding results.",
   },
 ];
+
+let idx = 1;
+
+function updateTestimonial() {
+  let { name, position, photo, text } = testimonials[idx];
+
+  testimonial.innerHTML = text;
+  user_image.src = photo;
+  user_role.innerHTML = position;
+  user_name.innerHTML = name;
+}
+
+setInterval(updateTestimonial, 10000);
