@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Young serif";
+  font-family: "Montserrat";
   display: flex;
   flex-direction: column;
   align-items: center;
